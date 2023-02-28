@@ -1,10 +1,15 @@
 import React from 'react';
+import "../../styles/Home.scss"
 
 const Home = () => {
     return (
-        <div>
+        <section className='home'>
+            <div>
+                <h1>Burger Point</h1>
+                <p>Give yourself a tasty burger</p>
+            </div>
             
-        </div>
+        </section>
     );
 };
 
