@@ -2,6 +2,7 @@ import React from 'react';
 import "../../styles/Home.scss"
 import { motion } from 'framer-motion'
 import Founder from './Founder';
+import Menu from './Menu';
 const Home = () => {
     const options = {
         initial: {
@@ -35,6 +36,7 @@ const Home = () => {
 
         </section>
         <Founder />
+        <Menu />
     </>
 
 
