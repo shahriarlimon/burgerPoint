@@ -1,16 +1,43 @@
 import React from 'react';
 import "../../styles/Home.scss"
-
+import { motion } from 'framer-motion'
+import Founder from './Founder';
 const Home = () => {
-    return (
+    const options = {
+        initial: {
+            x: "-100%",
+            opacity: 0,
+        },
+        whileInView: {
+            x: "0",
+            opacity: 1
+        }
+    }
+    return <>
         <section className='home'>
             <div>
-                <h1>Burger Point</h1>
-                <p>Give yourself a tasty burger</p>
+                <motion.h1 {...options}>Burger Point</motion.h1>
+                <motion.p {...options} transition={{ delay: 0.2 }}>Give yourself a tasty burger</motion.p>
             </div>
-            
+            <motion.a
+                initial={{
+                    y: "-100%",
+                    opacity: 0
+
+                }}
+                whileInView={{
+                    y: "0",
+                    opacity: 1
+                }}
+                transition={{ delay: 0.4 }}
+
+                href='#menu'>View Menu</motion.a>
+
         </section>
-    );
+        <Founder />
+    </>
+
+
 };
 
 export default Home;
