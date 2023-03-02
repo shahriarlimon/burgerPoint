@@ -12,6 +12,8 @@ import ConfirmOrder from './components/Cart/ConfirmOrder';
 import PaymentSuccess from './components/Cart/PaymentSuccess';
 import Login from './components/login/Login';
 import Profile from './components/profile/Profile';
+import MyOrders from './components/myOrders/MyOrders';
+import OrderDetails from './components/myOrders/OrderDetails';
 
 function App() {
   return <Router>
@@ -25,6 +27,8 @@ function App() {
       <Route path='/paymentsuccess' element={<PaymentSuccess />} />
       <Route path='/login' element={<Login />} />
       <Route path='/me' element={<Profile />} />
+      <Route path='/myorders' element={<MyOrders />} />
+      <Route path="/order/:id" element={<OrderDetails />} />
 
     </Routes>
     <Footer />
