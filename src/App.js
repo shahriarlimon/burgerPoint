@@ -10,6 +10,8 @@ import Cart from './components/Cart/Cart';
 import Shipping from './components/Cart/Shipping';
 import ConfirmOrder from './components/Cart/ConfirmOrder';
 import PaymentSuccess from './components/Cart/PaymentSuccess';
+import Login from './components/login/Login';
+import Profile from './components/profile/Profile';
 
 function App() {
   return <Router>
@@ -21,6 +23,8 @@ function App() {
       <Route path='/shipping' element={<Shipping />} />
       <Route path='/confirmOrder' element={<ConfirmOrder />} />
       <Route path='/paymentsuccess' element={<PaymentSuccess />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/me' element={<Profile />} />
 
     </Routes>
     <Footer />
