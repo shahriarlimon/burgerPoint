@@ -59,16 +59,16 @@ const OrderDetails = () => {
         <div>
           <h1>Amount</h1>
           <p>
-            <b>Items Total</b>₹{2132}
+            <b>Items Total</b>${2132}
           </p>
           <p>
-            <b>Shipping Charges</b>₹{200}
+            <b>Shipping Charges</b>${200}
           </p>
           <p>
-            <b>Tax</b>₹{232}
+            <b>Tax</b>${232}
           </p>
           <p>
-            <b>Total Amount</b>₹{232 + 200 + 2132}
+            <b>Total Amount</b>${232 + 200 + 2132}
           </p>
         </div>
 
