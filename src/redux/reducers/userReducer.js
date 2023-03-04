@@ -4,7 +4,7 @@ export const authReducer = createReducer(
     {
 
     }, {
-    loadUserReducerRequest: (state) => {
+    loadUserRequest: (state) => {
         state.loading = true
     },
     loadUserSuccess: (state, action) => {
@@ -16,5 +16,11 @@ export const authReducer = createReducer(
         state.loading = false;
         state.isAuthenticated = false;
         state.error = action.payload
+    },
+    clearError: (state) => {
+        state.error = null;
+    },
+    clearMessage: (state) => {
+        state.message = null
     }
 })
