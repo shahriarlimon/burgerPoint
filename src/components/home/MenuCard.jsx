@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion'
 
-const MenuCard = ({ name, image, price, handler, itemNo }) => {
+const MenuCard = ({ title, image, price, handler, itemNo }) => {
     return (
         <motion.div className='menuCard'
             initial={{
@@ -21,7 +21,7 @@ const MenuCard = ({ name, image, price, handler, itemNo }) => {
             <main>
                 <img src={image} alt='name' />
                 <h5>${price}</h5>
-                <p>{name}</p> 
+                <p>{title}</p> 
                 <button onClick={() => handler()}>Buy Now</button>
             </main>
 
